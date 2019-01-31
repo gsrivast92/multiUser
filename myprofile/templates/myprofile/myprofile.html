@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method='post'>
+      {% csrf_token %}
+<label for="text">First Name</label>
+{{ form.firstName }}
+
+</br>
+<label for="text">Last Name</label>
+{{ form.lastName }}
+</br>
+<label for="text">user Id</label>
+{{ form.userId }}
+</br>
+<label for="password">password</label>
+{{ form.password }}
+</br>
+<div hidden>
+  <label for="userKey">userkey</label>
+  {{ form.userKey }}
+</div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
